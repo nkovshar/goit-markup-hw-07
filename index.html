@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -38,6 +39,11 @@
               <a href="" class="header-link link">Contacts</a>
             </li>
           </ul>
+          <button type="button" data-menu-open class="menu-open-btn">
+            <svg class="modal-icon-mob" width="32" height="22">
+              <use href="./images/icons.svg#icon-hamburger"></use>
+            </svg>
+          </button>
         </nav>
 
         <address class="header-address">
@@ -54,6 +60,78 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button type="button" class="modal-mob-close-btn" data-menu-close>
+            <svg class="modal-mob-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-sign"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a href="./index.html" class="mob-menu-link current link"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a href="./portfolio.html" class="mob-menu-link link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-link link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <address class="mob-menu-address">
+            <ul class="mob-address-list list">
+              <li class="mob-menu-address-item">
+                <a class="mob-menu-address-phone link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-menu-address-item">
+                <a
+                  class="mob-menu-address-mail link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-soc-list list">
+            <li class="mob-soc-item">
+              <a class="mob-soc-link link" href=""
+                ><svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a class="mob-soc-link link" href=""
+                ><svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a class="mob-soc-link link" href=""
+                ><svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a class="mob-soc-link link" href=""
+                ><svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -128,6 +206,7 @@
           <ul class="duties-list list">
             <li class="duties-item">
               <img
+                srcset="./images/img1-2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="computer screen"
                 width="360"
@@ -136,6 +215,7 @@
             </li>
             <li class="duties-item">
               <img
+                srcset="./images/img2-2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="telephone with open tabs"
                 width="360"
@@ -144,6 +224,7 @@
             </li>
             <li class="duties-item">
               <img
+                srcset="./images/img3-2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="telephone in hand and laptop on the table"
                 width="360"
@@ -159,6 +240,7 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="./images/mark-2x.jpg 2x"
                 src="./images/mark.jpg"
                 alt="Mark's profile picture"
                 width="264"
@@ -201,6 +283,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/tom-2x.jpg 2x"
                 src="./images/tom.jpg"
                 alt="Tom's profile picture"
                 width="264"
@@ -218,7 +301,7 @@
                     </a>
                   </li>
                   <li class="team-soc-item">
-                    <a class="team-soc-link link" href
+                    <a class="team-soc-link link" href=""
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
@@ -243,6 +326,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/camila-2x.jpg 2x"
                 src="./images/camila.jpg"
                 alt="Camila's profile picture"
                 width="264"
@@ -285,6 +369,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/daniel-2x.jpg 2x"
                 src="./images/daniel.jpg"
                 alt="Daniel's profile picture"
                 width="264"
@@ -330,7 +415,7 @@
       </section>
 
       <section class="customers">
-        <div class="container">
+        <div class="container thin-container">
           <h2 class="customers-title head-title">Customers</h2>
           <div class="customers-list list">
             <ul class="customers-icon-list list">
@@ -382,7 +467,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container footer-container thin-container">
         <div class="footer-content">
           <a href="./index.html" class="footer-logo link"
             >Web<span class="footer-logo-style">Studio</span></a
@@ -534,6 +619,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
