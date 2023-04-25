@@ -206,7 +206,7 @@ section {
   font-size: 24px;
   line-height: 1.11;
   text-transform: capitalize;
-  color: var(--button-icon-logo-color) #4d5ae5;
+  color: var(--button-icon-logo-color, #4d5ae5);
 }
 
 .mob-menu-address-mail {
