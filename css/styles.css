@@ -138,6 +138,7 @@ section {
 .menu-open-btn {
   display: block;
   margin-left: auto;
+  padding: 0;
   stroke: #2e2f42;
   background-color: transparent;
   border: transparent;
@@ -155,6 +156,9 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.current {
+  color: var(--main-hover-focus, #404bbf);
 }
 
 .modal-mob-close-btn {
@@ -191,6 +195,9 @@ section {
   transition: color 250ms var(--timing-function);
 }
 
+.current {
+  color: var(--main-hover-focus, #404bbf);
+}
 .mob-menu-link:focus {
   color: var(--main-hover-focus, #404bbf);
 }
@@ -417,20 +424,15 @@ section {
   padding-top: 96px;
   padding-bottom: 96px;
 }
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 72px;
-}
+
 .footer-content {
   width: 268px;
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
 .footer-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  text-align: center;
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -450,10 +452,13 @@ section {
   color: var(--secondary-bg-color, #f4f4fd);
 }
 
+.footer-soc-media {
+  display: block;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
 .footer-title-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: 500;
   margin-top: 0px;
   margin-bottom: 16px;
@@ -462,6 +467,8 @@ section {
 
 .footer-soc-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 16px;
 }
 
@@ -488,15 +495,14 @@ section {
 .footer-soc-link:focus {
   background-color: var(--footer-hover-focus, #31d0aa);
 }
-
+.footer-subscription {
+  display: block;
+  text-align: center;
+}
 .subscription-items {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .footer-input {
-  width: 300px;
+  width: 290px;
   height: 40px;
   margin-bottom: 16px;
   border: 1px solid #ffffff;
@@ -521,6 +527,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   width: 165px;
   height: 40px;
   background: var(--button-icon-logo-color, #4d5ae5);
